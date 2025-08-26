@@ -4,6 +4,69 @@
   
   
   <entry>
+    <title>基礎MCP Agent</title>
+    <link href="/2025/08/25/Base_Agent/"/>
+    <url>/2025/08/25/Base_Agent/</url>
+    
+    <content type="html"><![CDATA[<h1 id="MCP-Agent"><a href="#MCP-Agent" class="headerlink" title="MCP Agent"></a>MCP Agent</h1><p>一個基於Open AI Agent SDK 和 Model Context Protocol(MCP)的Agent配置工具，提供子代理、工具代理等功能的配置。</p><p><img src="/img/AI_agent/MCP_agent.png" alt="概念圖片"><br>此圖為基礎功能的圖片，通過此工具可以配置一個多Agent協作的系統，且可以配置MCP Agent使用。</p><h2 id="功能特色"><a href="#功能特色" class="headerlink" title="功能特色"></a>功能特色</h2><p>🤖 多層級代理架構: 支援主代理、子代理和工具代理<br>🔧 MCP 伺服器整合: 支援多種 MCP 工具和資源<br>🌐 RESTful API: 完整的 FastAPI 後端服務<br>🐳 Docker 支援: 容器化部署，簡化環境設定<br>⚙️ 可配置化: 靈活的代理和工具配置系統</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>AI Agent</tag>
+      
+      <tag>MCP</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Ratina mealset</title>
+    <link href="/2025/08/20/Joy_mealset/"/>
+    <url>/2025/08/20/Joy_mealset/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Ratina-mealset"><a href="#Ratina-mealset" class="headerlink" title="Ratina mealset"></a>Ratina mealset</h1><hr><p>Ratina Mealset是基於Ratina的重構版，嘗試採用我之前開發的MCP Agent配置，並且ASR、TTS等功能都有更新。<br>此專案用於自動化展Demo配餐功能。</p><p><img src="/img/AI_agent/ratina_mealset2.jpg" alt="Demo"></p><h2 id="🚀-核心功能"><a href="#🚀-核心功能" class="headerlink" title="🚀 核心功能"></a>🚀 核心功能</h2><p>語音辨識 (ASR): 將使用者語音轉換為文字<br>智能代理 (LLM Agent): 基於大型語言模型的對話系統<br>多服務協議適配器 (MCP): 連接並調用多種外部服務和工具<br>文字轉語音 (TTS): 將回覆轉換成自然的人聲輸出<br>語音轉動畫 (A2F): 將語音轉換為數位🐭的面部表情和動作</p><h2 id="功能升級"><a href="#功能升級" class="headerlink" title="功能升級"></a>功能升級</h2><p>智能代理 (LLM Agent): 基於Open AI Agent SDK開發的新AI Agent，在複雜問題的處理上更進一步，且Prompt配置也更加容易<br>語音辨識 (ASR): 從NV的服務改為使用 Open AI的 Whisper，支援包含中文、英文、日文在內等多語言。<br>文字轉語音 (TTS) : 從NV的服務改為使用開源的MeloTTS，額外新增支援中文，且後續日文等語言添加也可通過更改Docker配置達成。</p><h2 id="功能介紹"><a href="#功能介紹" class="headerlink" title="功能介紹"></a>功能介紹</h2><h3 id="智能點餐系統"><a href="#智能點餐系統" class="headerlink" title="智能點餐系統"></a>智能點餐系統</h3><pre><code class=" mermaid">flowchart TD    A[顧客開始點餐] --&gt; B[向顧客打招呼並推薦餐點]    B --&gt; C[顧客點餐]    C --&gt; D[複誦內容請顧客確認餐點]    D --&gt; E[呼叫機器手臂取餐]    E --&gt; F[和顧客說餐點製作完成]    F --&gt; G[確認流程完成]    G --&gt; H[清空取餐盤]</code></pre><h2 id="我的貢獻"><a href="#我的貢獻" class="headerlink" title="我的貢獻"></a>我的貢獻</h2><ul><li>負責專案後端設計與開發，包括 MCP Server、多服務協議整合</li><li>Agent的 prompt及後端API設計</li><li>串接 ASR -&gt; LLM -&gt; TTS -&gt; A2F的Digital Human流程</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>AI Agent</tag>
+      
+      <tag>MCP</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Digital Human Demokit</title>
+    <link href="/2025/05/20/Joy/"/>
+    <url>/2025/05/20/Joy/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Digital-Human-Demokit"><a href="#Digital-Human-Demokit" class="headerlink" title="Digital Human Demokit"></a>Digital Human Demokit</h1><p>RATINA 是一個綜合性的數位🐭聊天系統，結合了多種 AI 技術，包括語音辨識、大型語言模型、文字轉語音以及動畫生成，打造出能夠與人類自然互動的數位助理。<br>此專案用於Computex Demo AI Agent和機器手臂的連動。</p><p><img src="/img/AI_agent/ratina.jpg" alt="Demo"></p><h2 id="🚀-核心功能"><a href="#🚀-核心功能" class="headerlink" title="🚀 核心功能"></a>🚀 核心功能</h2><p>語音辨識 (ASR): 將使用者語音轉換為文字<br>智能代理 (LLM Agent): 基於大型語言模型的對話系統<br>多服務協議適配器 (MCP): 連接並調用多種外部服務和工具<br>文字轉語音 (TTS): 將回覆轉換成自然的人聲輸出<br>語音轉動畫 (A2F): 將語音轉換為數位🐭的面部表情和動作</p><h2 id="功能介紹"><a href="#功能介紹" class="headerlink" title="功能介紹"></a>功能介紹</h2><h3 id="智能RAG問答系統"><a href="#智能RAG問答系統" class="headerlink" title="智能RAG問答系統"></a>智能RAG問答系統</h3><p>通過RAG系統回答</p><ul><li>公司資訊</li><li>展場資訊</li><li>產品Spec</li></ul><h3 id="機器手臂互動"><a href="#機器手臂互動" class="headerlink" title="機器手臂互動"></a>機器手臂互動</h3><p>通過自行開發的MCP Server和機器手臂互動</p><ul><li>吸取餅乾</li><li>給顧客贈品</li><li>拍攝主機板瑕疵照片並辨識</li></ul><hr><h2 id="我的貢獻"><a href="#我的貢獻" class="headerlink" title="我的貢獻"></a>我的貢獻</h2><ul><li>負責專案後端設計與開發，包括 MCP Server、多服務協議整合</li><li>Agent的 prompt及後端API設計</li><li>串接 ASR -&gt; LLM -&gt; TTS -&gt; A2F的Digital Human流程</li><li>協助設計 RAG 問答系統的資料流與回應邏輯</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>AI Agent</tag>
+      
+      <tag>MCP</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>性別轉換聲音模擬</title>
     <link href="/2024/03/11/Human%20Voice%20gender%20transition%20simulation/"/>
     <url>/2024/03/11/Human%20Voice%20gender%20transition%20simulation/</url>
