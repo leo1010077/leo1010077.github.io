@@ -1,10 +1,10 @@
 ---
-title: "Digital Human Demokit"
+title: "Ratina Computex2026"
 date: 2026-05-20 12:00:00
 tags:
   - "AI Agent"
   - "MCP"
-index_img: /img/AI_Agent/ratina.jpg
+index_img: /img/computex2026/exhibition_qa_swimlane.svg
 ---
 
 # Ratina Computex2026
@@ -16,8 +16,8 @@ Computex2026我們展示的是結合Digital Human和機器手臂互動的展場�
 ## 🚀 核心功能
 
 語音辨識 (ASR): 將使用者語音轉換為文字  
-智能代理 (LLM Agent): 基於大型語言模型的對話系統
-子Agent (Sub Agent): 多Agent協作系統
+智能代理 (LLM Agent): 基於大型語言模型的對話系統  
+子Agent (Sub Agent): 多Agent協作系統  
 多服務協議適配器 (MCP): 連接並調用多種外部服務和工具  
 文字轉語音 (TTS): 將回覆轉換成自然的人聲輸出  
 語音轉動畫 (A2F): 將語音轉換為數位🐭的面部表情和動作
@@ -62,7 +62,7 @@ Computex2026我們展示的是結合Digital Human和機器手臂互動的展場�
 ---
 #### 展場互動流程設計
 
-[互動流程](img/computex2026/exhibition_qa_swimlane.svg)
+![互動流程](/img/computex2026/exhibition_qa_swimlane.svg)
 
 
 
