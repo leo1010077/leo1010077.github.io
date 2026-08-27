@@ -4,7 +4,7 @@ date: 2026-05-20 12:00:00
 tags:
   - "AI Agent"
   - "MCP"
-index_img: /img/computex2026/exhibition_qa_swimlane.svg
+index_img: /img/computex2026/good.png
 ---
 
 # Ratina Computex2026
@@ -58,13 +58,18 @@ Computex2026我們展示的是結合Digital Human和機器手臂互動的展場�
 - **優化手臂協作**：手臂動作時Digital Human會同步回答，不用乾等手臂動作。
 
 
-### 功能介紹
----
-#### 展場互動流程設計
+
+### 展場互動流程
 
 ![互動流程](/img/computex2026/exhibition_qa_swimlane.svg)
 
 
+
+### 互動截圖
+
+![比讚截圖](/img/computex2026/good.png)
+
+![拿可樂截圖](/img/computex2026/cola.png)
 
 
 
