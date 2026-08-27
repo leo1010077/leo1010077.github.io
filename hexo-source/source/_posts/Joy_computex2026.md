@@ -4,7 +4,7 @@ date: 2026-05-20 12:00:00
 tags:
   - "AI Agent"
   - "MCP"
-index_img: /img/computex2026/good.png
+index_img: /img/AI_Agent/ratina.jpg
 ---
 
 # Ratina Computex2026
