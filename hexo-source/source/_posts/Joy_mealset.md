@@ -3,6 +3,7 @@ title: "Ratina mealset"
 date: 2025-08-20 12:00:00
 tags:
   - "AI Agent"
+  - "Demo"
   - "MCP"
 index_img: /img/AI_Agent/ratina_mealset.jpg
 ---
