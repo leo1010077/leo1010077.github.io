@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>Github MCP Tool</title>
+    <link href="/2026/07/30/github_MCP/"/>
+    <url>/2026/07/30/github_MCP/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Github-MCP-Tool"><a href="#Github-MCP-Tool" class="headerlink" title="Github MCP Tool"></a>Github MCP Tool</h1><h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>公司內部有許多Code是不能上傳到雲端Agent的，但在此前提下，還是希望大家可以使用AI來加速開發。 我們設計了一套查詢Git Commit記錄的MCP Tool。 AI Agent在這個過程中只會經手 Commit標題和內文，所有Code都不會傳到雲端LLM那裡。</p><h2 id="系統架構"><a href="#系統架構" class="headerlink" title="系統架構"></a>系統架構</h2><p>系統架構如下，我們架設了一個Server以vLLM運行<a href="https://huggingface.co/jinaai/jina-code-embeddings-1.5b">jina-code-embeddings-1.5b</a>並在其上運行此服務。</p><p><img src="/img/github/githubtool.svg" alt="系統架構圖"></p><p>我們會定時抓取github專案的commit紀錄到本地端，同時透過embedding model建立commit記錄的向量資料庫，此向量資料庫會經由MCP的方式公開此服務，只要是連上此服務的LLM都可以使用此工具查詢我們Github上的commit紀錄。 </p><p>我們有額外開發skill來教AI Agent使用此工具的技巧，包含整理出符合大家使用習慣的格式，以及直接把commit的hash整理成超連結給使用者直接點進去確認內容。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>AI Agent</tag>
+      
+      <tag>MCP</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Ratina Computex2026</title>
     <link href="/2026/05/20/Joy_computex2026/"/>
     <url>/2026/05/20/Joy_computex2026/</url>
