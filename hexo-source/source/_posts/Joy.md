@@ -3,6 +3,7 @@ title: "Digital Human Demokit"
 date: 2025-05-20 12:00:00
 tags:
   - "AI Agent"
+  - "Demo"
   - "MCP"
 index_img: /img/AI_Agent/ratina.jpg
 ---
