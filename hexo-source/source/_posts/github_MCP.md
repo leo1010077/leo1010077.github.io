@@ -4,6 +4,7 @@ date: 2026-07-30 12:00:00
 tags:
   - "AI Agent"
   - "MCP"
+index_img: /img/github/githubtool.svg
 ---
 
 # Github MCP Tool
